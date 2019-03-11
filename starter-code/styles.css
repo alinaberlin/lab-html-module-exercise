@@ -2,7 +2,7 @@ nav {
   background-color: #C12127;
   color: rgba(255,255,255,0.8);
   padding-top: 15px;
-  height: 100px;
+  height: 40px;
 }
 
 nav a {
@@ -13,8 +13,8 @@ nav a {
 .top-links {
   display: inline-block;
   float: right;
-  padding: 0;
-  margin: 0 20px 0 0;
+  padding: 0 0 0 0;
+  margin: -15px 0 0 0;
 }
 
 .top-links li {
@@ -22,6 +22,41 @@ nav a {
   margin: 0 10px;
 }
 
-.top-left div {
+.top-left {
   
+}
+
+.searchbar {
+  overflow: hidden;
+  background: rgb(31, 82, 111);
+}
+
+.searchbar .logo {
+  float: left;
+  display: block;
+  text-align: center;
+  width: 100px;
+  margin-top: 8px;
+}
+
+.searchbar input[type=text] {
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  margin-left: 20px;
+  font-size: 17px;
+  width: 60%;
+}
+
+.searchbar a {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  font-size: 17px;
+}
+
+#headertext {
+  margin: 0 auto;
 }
