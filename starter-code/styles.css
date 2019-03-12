@@ -1,8 +1,16 @@
+body {
+  margin: 0;
+  background: #C12127;
+  color: white;
+  min-width: 410px;
+}
+
 nav {
-  background-color: #C12127;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
   color: rgba(255,255,255,0.8);
-  padding-top: 15px;
-  height: 40px;
+  padding: 5px;
 }
 
 nav a {
@@ -10,53 +18,184 @@ nav a {
   text-decoration: none;
 }
 
+.heart, 
+.acronym {
+    margin: 10px;
+  } 
+
 .top-links {
-  display: inline-block;
-  float: right;
-  padding: 0 0 0 0;
-  margin: -15px 0 0 0;
+  flex-wrap: wrap;
+  margin: auto;
 }
+
 
 .top-links li {
   display: inline-block;
   margin: 0 10px;
 }
 
-.top-left {
-  
+
+header {
+  background: rgb(32, 101, 136);
+  background-image: url(./images/city-scape.svg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: top;  
+  padding-bottom: 100px; 
 }
 
-.searchbar {
-  overflow: hidden;
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.search input {
   background: rgb(31, 82, 111);
+  color: white;
+  padding: 0.5rem;
 }
 
-.searchbar .logo {
-  float: left;
-  display: block;
-  text-align: center;
-  width: 100px;
-  margin-top: 8px;
+input:focus {
+  outline: none;
 }
 
-.searchbar input[type=text] {
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  margin-left: 20px;
-  font-size: 17px;
+.bearlogo,
+.npmlogo {
+  height: 40px;
+  margin: 10px;
+}
+
+.searchContainer {
+  display: inline-flex;
+  position: relative;
+  border: 1px solid #ccc;
+  overflow: hidden;
   width: 60%;
+  margin: 10px;
 }
 
-.searchbar a {
-  float: right;
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  font-size: 17px;
+.searchIcon {
+  padding: 0.5rem;
+  background: rgb(31, 82, 111)
 }
 
-#headertext {
+.searchBox {
+  border: 0;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  flex: 1;
+}
+
+
+.buildcontent {
+  width: 30%;
+  margin-top: 5%;
+  margin-left: 20%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 20;
+}
+
+.buildcontent button {
+  background: rgb(240, 146, 51);
+  color: white;
+  font-size: 0.8em;
+  border-radius: 10px;
+  border: 0;
+  padding: 5px 15px;
+}
+
+.collaboration {
+  width: 100%;
+  background: rgb(39, 53, 71);
+}
+
+.collabcontainer {
+  color: white;
+  display: inline-flex;
+  width: 60%;
+  margin: 5% 20%;
+  align-items: center;
+}
+
+.collabimg {
+  width: 70%;
+  margin: 50px;
+}
+
+.collabcontent {
   margin: 0 auto;
+  text-align: start;
+}
+
+.collabcontent ul {
+  padding: 20px;
+}
+
+.collabcontent button {
+  background: rgb(203, 56, 55);
+  color: white;
+  font-size: 0.8em;
+  border-radius: 10px;
+  border: 0;
+  padding: 5px 15px;
+}
+
+/* whatis section */
+.whatis {
+  background-image: url(./images/forklift.svg);
+  background-size: cover;
+  height: 400px;
+  padding-top: 10%;
+  position: relative;
+}
+
+.whatiscontent {
+  width: 30%;
+  position: absolute;
+  left: 20%;
+  top: 10%;
+}
+
+.whatis button {
+  background: rgb(49, 68, 88);
+  color: white;
+  font-size: 0.8em;
+  border-radius: 10px;
+  border: 0;
+  padding: 5px 15px;
+}
+
+.whatcan {
+  padding: 5%;
+  background: white;
+  color: rgb(135, 145, 156);
+}
+
+.whatcanheading {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.whatcanoptions {
+  text-align: center;
+}
+
+.option {
+  vertical-align: top;
+  display: inline-block;
+  width: 20%;
+  padding: 5%;
+}
+
+.whatcan h2, .whatcan h3 {
+  color: rgb(83, 88, 98);
+}
+
+.whatcan p {
+ color: rgb(135, 145, 156);
+}
+
+.whatcan a {
+ color: rgb(208, 74, 73);
 }
